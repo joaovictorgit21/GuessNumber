@@ -1,0 +1,93 @@
+:root {
+    --colorWhite: #f9f6fb;
+    --colorDarkGreen: #26610a;
+    --colorLightGreen: #3fa110;
+    --colorGreen: #64c832;
+    --colorDarkGreen2: #20723f;
+    --colorGray: #494949;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--colorWhite);
+}
+
+.container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--colorWhite);
+    padding: 3rem 4rem;
+    box-shadow: 40px 40px 20px var(--colorDarkBlue);
+    border-radius: 20px;
+    z-index: 1;
+    margin-left: -5rem;
+}
+
+.container input {
+    width: 50%;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--colorGray);
+    color: var(--colorWhite);
+    outline: none;
+    padding: .4rem;
+}
+
+.container input::placeholder {
+    color: var(--colorWhite);
+}
+
+.container input:focus {
+    border-bottom: 2px solid var(--colorLightBlue);
+}
+
+
+.inputNum {
+    border-radius: 5px;
+}
+
+.inputNum[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btnEnviar {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: .8rem;
+    font-size: 1.3rem;
+    background-color: var(--colorLightGreen);
+    color: var(--colorBlue);
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btnEnviar:hover {
+    width: 90%;
+    border: 2px;
+    background-color: var(--colorDarkGreen2);
+}
+
+.mulherApontando {
+    width: 30%;
+    z-index: 0;
+    margin-right: 10rem;
+}
+
+.sicredLogo {
+    width: 20%;
+    position: relative;
+    margin-top: -35%;
+}
